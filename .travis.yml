@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - 16
+  
+before_script:
+  - npm install --if-present
+install:
+  - npm run build --if-present
+script:
+  - npm run test --if-present
+
